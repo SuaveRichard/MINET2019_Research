@@ -1,0 +1,2 @@
+SimulationSecond,ReceiveRate,PacketsReceived,NumberOfSinks,RoutingProtocol,TransmissionPower,WavePktsSent,WavePtksReceived,WavePktsPpr,ExpectedWavePktsReceived,ExpectedWavePktsInCoverageReceived,BSM_PDR1,BSM_PDR2,BSM_PDR3,BSM_PDR4,BSM_PDR5,BSM_PDR6,BSM_PDR7,BSM_PDR8,BSM_PDR9,BSM_PDR10,MacPhyOverhead
+0,0,0,10,protocol,7.5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0

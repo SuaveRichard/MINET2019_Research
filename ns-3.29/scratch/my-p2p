@@ -1,0 +1,192 @@
+
+
+
+#include "ns3/core-module.h"
+#include "ns3/network-module.h"
+#include "ns3/internet-module.h"
+#include "ns3/point-to-point-module.h"
+#include "ns3/applications-module.h"
+#include "ns3/netanim-module.h"
+#include "ns3/point-to-point-net-device.h"
+#include "ns3/mobility-module.h"
+#include "ns3/aodv-module.h"
+#include "ns3/v4ping-helper.h"
+#include "ns3/yans-wifi-helper.h"
+
+
+using namespace ns3;
+
+int main (int argc, char *argv[]){
+
+	CommandLine cmd;
+	cmd.Parse (argc,argv); 
+
+
+	//Time::SetResolution (Time::NS);
+	LogComponentEnable ("UdpEchoServerApplication", LOG_LEVEL_INFO);
+	LogComponentEnable ("UdpEchoClientApplication", LOG_LEVEL_INFO);
+
+	NodeContainer nodes;
+	nodes.Create (5);
+
+	  std::cout << "Creating " << (unsigned)nodes.GetN() << " point-to-pointnodes.\n";
+
+
+    MobilityHelper mobility;
+    mobility.SetPositionAllocator ("ns3::GridPositionAllocator",
+                                   "MinX", DoubleValue (0.0),
+                                   "MinY", DoubleValue (0.0),
+                                   "DeltaX", DoubleValue (10),
+                                   "DeltaY", DoubleValue (10),
+                                   "GridWidth", UintegerValue (2),
+                                   "LayoutType", StringValue ("RowFirst"));
+    mobility.SetMobilityModel ("ns3::ConstantPositionMobilityModel");
+    mobility.Install (nodes);
+
+
+
+
+
+	PointToPointHelper p2p;
+	p2p.SetDeviceAttribute ("DataRate",StringValue ("20Mbps"));
+	p2p.SetChannelAttribute ("Delay", StringValue ("2ms"));
+
+	WifiMacHelper wifiMac;
+ 	wifiMac.SetType ("ns3::AdhocWifiMac");
+  	YansWifiPhyHelper wifiPhy = YansWifiPhyHelper::Default ();
+  	YansWifiChannelHelper wifiChannel = YansWifiChannelHelper::Default ();
+  	wifiPhy.SetChannel (wifiChannel.Create ());
+
+  	WifiHelper wifi;
+  	wifi.SetRemoteStationManager ("ns3::ConstantRateWifiManager", "DataMode", StringValue ("OfdmRate6Mbps"), "RtsCtsThreshold", UintegerValue (0));
+
+
+
+	NetDeviceContainer devices;
+	devices = p2p.Install (nodes.Get (0), nodes.Get (1));
+
+/*	NetDeviceContainer devices1;
+	devices1 = p2p.Install (nodes.Get (2), nodes.Get (1));
+
+	NetDeviceContainer devices2;
+	devices2 = p2p.Install (nodes.Get (3), nodes.Get (1));
+*/
+	NetDeviceContainer devices3;
+	devices3 = p2p.Install (nodes.Get (4), nodes.Get (1));
+
+///////////////////////////////
+	NetDeviceContainer devices0;
+	devices0 = wifi.Install (wifiPhy, wifiMac, nodes); 
+
+
+	InternetStackHelper stack;
+	stack.Install(nodes);
+
+
+	Ipv4AddressHelper address;
+	address.SetBase ("10.1.1.0", "255.255.255.0");
+	Ipv4AddressHelper address1;
+	address1.SetBase ("10.1.2.0", "255.255.255.0");
+	Ipv4AddressHelper address2;
+	address2.SetBase ("10.1.3.0", "255.255.255.0");
+	Ipv4AddressHelper address3;
+	address3.SetBase ("10.1.4.0", "255.255.255.0");
+
+
+	Ipv4InterfaceContainer interface = address.Assign (devices);
+	Ipv4InterfaceContainer interface1 = address1.Assign (devices1);
+/*	Ipv4InterfaceContainer interface2 = address2.Assign (devices2);
+	Ipv4InterfaceContainer interface3 = address3.Assign (devices3);
+*/
+	UdpEchoServerHelper echoServer (60);
+	ApplicationContainer serverApps = echoServer.Install (nodes.Get (1));
+	serverApps.Start (Seconds (1.0));	
+	serverApps.Stop (Seconds (10.0));
+
+	UdpEchoServerHelper echoServer1 (61);
+	ApplicationContainer serverApps1 = echoServer1.Install (nodes.Get (1));
+	serverApps1.Start (Seconds (1.0));
+	serverApps1.Stop (Seconds (10.0));
+
+/*	UdpEchoServerHelper echoServer2 (62);
+	ApplicationContainer serverApps2 = echoServer2.Install (nodes.Get (1));
+	serverApps2.Start (Seconds (1.0));
+	serverApps2.Stop (Seconds (10.0));
+	
+	UdpEchoServerHelper echoServer3 (63);
+	ApplicationContainer serverApps3 = echoServer3.Install (nodes.Get (1));
+	serverApps3.Start (Seconds (1.0));
+	serverApps3.Stop (Seconds (10.0));
+*/
+
+
+	UdpEchoClientHelper echoClient (interface.GetAddress (1),60);
+	echoClient.SetAttribute ("MaxPackets", UintegerValue (1));
+  	echoClient.SetAttribute ("Interval", TimeValue (Seconds (1.0)));
+  	echoClient.SetAttribute ("PacketSize", UintegerValue (1024));
+
+	UdpEchoClientHelper echoClient1 (interface1.GetAddress (1),61);
+	echoClient1.SetAttribute ("MaxPackets", UintegerValue (1));
+  	echoClient1.SetAttribute ("Interval", TimeValue (Seconds (1.0)));
+  	echoClient1.SetAttribute ("PacketSize", UintegerValue (1024));
+
+/*	UdpEchoClientHelper echoClient2 (interface2.GetAddress (1),62);
+	echoClient2.SetAttribute ("MaxPackets", UintegerValue (1));
+  	echoClient2.SetAttribute ("Interval", TimeValue (Seconds (1.0)));
+  	echoClient2.SetAttribute ("PacketSize", UintegerValue (1024));
+
+	UdpEchoClientHelper echoClient3 (interface3.GetAddress (1),63);
+	echoClient3.SetAttribute ("MaxPackets", UintegerValue (1));
+  	echoClient3.SetAttribute ("Interval", TimeValue (Seconds (1.0)));
+  	echoClient3.SetAttribute ("PacketSize", UintegerValue (1024));
+*/
+
+
+  	ApplicationContainer clientApps = echoClient.Install (nodes.Get(0));
+  	clientApps.Start (Seconds (2.0));
+  	clientApps.Stop (Seconds (10.0));
+
+	ApplicationContainer clientApps1 = echoClient1.Install (nodes.Get(2));
+  	clientApps1.Start (Seconds (3.0));
+  	clientApps1.Stop (Seconds (10.0));
+
+/*  	ApplicationContainer clientApps2 = echoClient2.Install (nodes.Get(3));
+  	clientApps2.Start (Seconds (4.0));
+  	clientApps2.Stop (Seconds (10.0));
+
+  	ApplicationContainer clientApps3 = echoClient3.Install (nodes.Get(4));
+  	clientApps3.Start (Seconds (5.0));
+  	clientApps3.Stop (Seconds (10.0));
+*/
+
+
+for(uint32_t i = 0; i < 2; i++){
+	std::cout << "node " << i << " address " << interface.GetAddress (i) << "\n";
+}
+for(uint32_t i = 0; i < 2; i++){
+	std::cout << "node " << i << " address " << interface1.GetAddress (i) << "\n";
+}
+for(uint32_t i = 0; i < 2; i++){
+	std::cout << "node " << i << " address " << interface2.GetAddress (i) << "\n";
+}
+for(uint32_t i = 0; i < 2; i++){
+	std::cout << "node " << i << " address " << interface3.GetAddress (i) << "\n";
+}
+
+
+  	AnimationInterface anim ("my-p2panim.xml");
+  	/*anim.SetConstantPosition(nodes.Get(0),1.0,1.0);
+  	anim.SetConstantPosition(nodes.Get(1),4.0,2.0);
+  	anim.SetConstantPosition(nodes.Get(2),7.0,3.0);
+  	anim.SetConstantPosition(nodes.Get(3),10.0,4.0);
+  	anim.SetConstantPosition(nodes.Get(4),13.0,5.0);
+  	*/
+-
+	//Simulator::Stop (Seconds (10.0));
+
+  	Simulator::Run();
+  	Simulator::Destroy ();
+
+  	return 0;
+  	
+}

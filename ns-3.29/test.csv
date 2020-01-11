@@ -1,0 +1,225 @@
+Waf: Entering directory `/home/fk/ns-3.29/bake/source/ns-3.29/build'
+[1403/2653] Compiling src/applications/model/udp-server.cc
+[2437/2653] Compiling scratch/vanet3-p2p.cc
+[2444/2653] Linking build/lib/libns3-dev-applications-debug.so
+[2445/2653] Linking build/lib/libns3-dev-lte-debug.so
+[2446/2653] Linking build/lib/libns3-dev-applications-test-debug.so
+[2447/2653] Linking build/src/applications/examples/ns3-dev-three-gpp-http-example-debug
+[2448/2653] Linking build/src/bridge/examples/ns3-dev-csma-bridge-debug
+[2449/2653] Linking build/src/bridge/examples/ns3-dev-csma-bridge-one-hop-debug
+[2450/2653] Linking build/src/brite/examples/ns3-dev-brite-generic-example-debug
+[2451/2653] Linking build/src/brite/examples/ns3-dev-brite-MPI-example-debug
+[2452/2653] Linking build/src/csma/examples/ns3-dev-csma-one-subnet-debug
+[2453/2653] Linking build/src/csma/examples/ns3-dev-csma-broadcast-debug
+[2454/2653] Linking build/src/csma/examples/ns3-dev-csma-packet-socket-debug
+[2455/2653] Linking build/src/csma/examples/ns3-dev-csma-multicast-debug
+[2456/2653] Linking build/src/csma/examples/ns3-dev-csma-raw-ip-socket-debug
+[2457/2653] Linking build/src/csma/examples/ns3-dev-csma-ping-debug
+[2458/2653] Linking build/src/csma-layout/examples/ns3-dev-csma-star-debug
+[2459/2653] Linking build/src/dsdv/examples/ns3-dev-dsdv-manet-debug
+[2460/2653] Linking build/src/dsr/examples/ns3-dev-dsr-debug
+[2461/2653] Linking build/src/fd-net-device/examples/ns3-dev-fd2fd-onoff-debug
+[2462/2653] Linking build/src/fd-net-device/examples/ns3-dev-realtime-fd2fd-onoff-debug
+[2463/2653] Linking build/src/fd-net-device/examples/ns3-dev-fd-emu-udp-echo-debug
+[2464/2653] Linking build/src/fd-net-device/examples/ns3-dev-fd-emu-onoff-debug
+[2465/2653] Linking build/src/internet/examples/ns3-dev-main-simple-debug
+[2466/2653] Linking build/src/internet-apps/examples/ns3-dev-dhcp-example-debug
+[2467/2653] Linking build/src/mesh/examples/ns3-dev-mesh-debug
+[2468/2653] Linking build/src/mpi/examples/ns3-dev-simple-distributed-debug
+[2469/2653] Linking build/src/mpi/examples/ns3-dev-third-distributed-debug
+[2470/2653] Linking build/src/mpi/examples/ns3-dev-nms-p2p-nix-distributed-debug
+[2471/2653] Linking build/src/mpi/examples/ns3-dev-simple-distributed-empty-node-debug
+[2472/2653] Linking build/src/nix-vector-routing/examples/ns3-dev-nix-simple-debug
+[2473/2653] Linking build/src/nix-vector-routing/examples/ns3-dev-nms-p2p-nix-debug
+[2474/2653] Linking build/src/olsr/examples/ns3-dev-simple-point-to-point-olsr-debug
+[2475/2653] Linking build/src/spectrum/examples/ns3-dev-adhoc-aloha-ideal-phy-debug
+[2476/2653] Linking build/src/spectrum/examples/ns3-dev-adhoc-aloha-ideal-phy-matrix-propagation-loss-model-debug
+[2477/2653] Linking build/src/spectrum/examples/ns3-dev-adhoc-aloha-ideal-phy-with-microwave-oven-debug
+[2478/2653] Linking build/src/tap-bridge/examples/ns3-dev-tap-wifi-dumbbell-debug
+[2479/2653] Linking build/src/topology-read/examples/ns3-dev-topology-example-sim-debug
+[2480/2653] Linking build/src/traffic-control/examples/ns3-dev-red-tests-debug
+[2481/2653] Linking build/src/traffic-control/examples/ns3-dev-red-vs-ared-debug
+[2482/2653] Linking build/src/traffic-control/examples/ns3-dev-adaptive-red-tests-debug
+[2483/2653] Linking build/src/traffic-control/examples/ns3-dev-pfifo-vs-red-debug
+[2484/2653] Linking build/src/traffic-control/examples/ns3-dev-codel-vs-pfifo-basic-test-debug
+[2485/2653] Linking build/src/traffic-control/examples/ns3-dev-codel-vs-pfifo-asymmetric-debug
+[2486/2653] Linking build/src/traffic-control/examples/ns3-dev-pie-example-debug
+[2487/2653] Linking build/src/uan/examples/ns3-dev-uan-cw-example-debug
+[2488/2653] Linking build/src/uan/examples/ns3-dev-uan-rc-example-debug
+[2489/2653] Linking build/src/virtual-net-device/examples/ns3-dev-virtual-net-device-debug
+[2490/2653] Linking build/src/wave/examples/ns3-dev-wave-simple-80211p-debug
+[2491/2653] Linking build/src/wave/examples/ns3-dev-wave-simple-device-debug
+[2492/2653] Linking build/src/wave/examples/ns3-dev-vanet-routing-compare-debug
+[2493/2653] Linking build/src/wimax/examples/ns3-dev-wimax-ipv4-debug
+[2494/2653] Linking build/src/wimax/examples/ns3-dev-wimax-multicast-debug
+[2495/2653] Linking build/src/wimax/examples/ns3-dev-wimax-simple-debug
+[2496/2653] Linking build/examples/udp-client-server/ns3-dev-udp-client-server-debug
+[2497/2653] Linking build/examples/udp-client-server/ns3-dev-udp-trace-client-server-debug
+[2498/2653] Linking build/lib/libns3-dev-netanim-debug.so
+[2499/2653] Linking build/lib/libns3-dev-test-debug.so
+[2500/2653] Linking build/lib/libns3-dev-lte-test-debug.so
+[2501/2653] Linking build/src/lte/examples/ns3-dev-lena-cqi-threshold-debug
+[2502/2653] Linking build/src/lte/examples/ns3-dev-lena-dual-stripe-debug
+[2503/2653] Linking build/src/lte/examples/ns3-dev-lena-fading-debug
+[2504/2653] Linking build/lib/libns3-dev-test-test-debug.so
+[2505/2653] Linking build/src/lte/examples/ns3-dev-lena-intercell-interference-debug
+[2506/2653] Linking build/src/lte/examples/ns3-dev-lena-ipv6-addr-conf-debug
+[2507/2653] Linking build/src/lte/examples/ns3-dev-lena-ipv6-ue-rh-debug
+[2508/2653] Linking build/lib/libns3-dev-netanim-test-debug.so
+[2509/2653] Linking build/src/lte/examples/ns3-dev-lena-ipv6-ue-ue-debug
+[2510/2653] Linking build/src/lte/examples/ns3-dev-lena-pathloss-traces-debug
+[2511/2653] Linking build/src/lte/examples/ns3-dev-lena-profiling-debug
+[2512/2653] Linking build/src/lte/examples/ns3-dev-lena-rem-debug
+[2513/2653] Linking build/src/lte/examples/ns3-dev-lena-rem-sector-antenna-debug
+[2514/2653] Linking build/src/lte/examples/ns3-dev-lena-rlc-traces-debug
+[2515/2653] Linking build/src/lte/examples/ns3-dev-lena-simple-debug
+[2516/2653] Linking build/src/lte/examples/ns3-dev-lena-simple-epc-debug
+[2517/2653] Linking build/src/lte/examples/ns3-dev-lena-deactivate-bearer-debug
+[2518/2653] Linking build/src/lte/examples/ns3-dev-lena-x2-handover-debug
+[2519/2653] Linking build/src/lte/examples/ns3-dev-lena-x2-handover-measures-debug
+[2520/2653] Linking build/src/lte/examples/ns3-dev-lena-frequency-reuse-debug
+[2521/2653] Linking build/src/lte/examples/ns3-dev-lena-distributed-ffr-debug
+[2522/2653] Linking build/src/lte/examples/ns3-dev-lena-uplink-power-control-debug
+[2523/2653] Linking build/src/lte/examples/ns3-dev-lena-simple-epc-emu-debug
+[2524/2653] Linking build/src/netanim/examples/ns3-dev-dumbbell-animation-debug
+[2525/2653] Linking build/src/netanim/examples/ns3-dev-grid-animation-debug
+[2526/2653] Linking build/src/netanim/examples/ns3-dev-star-animation-debug
+[2527/2653] Linking build/src/netanim/examples/ns3-dev-wireless-animation-debug
+[2528/2653] Linking build/src/netanim/examples/ns3-dev-uan-animation-debug
+[2529/2653] Linking build/src/netanim/examples/ns3-dev-colors-link-description-debug
+[2530/2653] Linking build/src/netanim/examples/ns3-dev-resources-counters-debug
+[2531/2653] Linking build/examples/matrix-topology/ns3-dev-matrix-topology-debug
+[2532/2653] Linking build/examples/traffic-control/ns3-dev-traffic-control-debug
+[2533/2653] Linking build/examples/traffic-control/ns3-dev-queue-discs-benchmark-debug
+[2534/2653] Linking build/examples/traffic-control/ns3-dev-red-vs-fengadaptive-debug
+[2535/2653] Linking build/examples/traffic-control/ns3-dev-red-vs-nlred-debug
+[2536/2653] Linking build/examples/traffic-control/ns3-dev-tbf-example-debug
+[2537/2653] Linking build/examples/udp/ns3-dev-udp-echo-debug
+[2538/2653] Linking build/examples/tcp/ns3-dev-tcp-large-transfer-debug
+[2539/2653] Linking build/examples/tcp/ns3-dev-tcp-nsc-lfn-debug
+[2540/2653] Linking build/examples/tcp/ns3-dev-tcp-nsc-zoo-debug
+[2541/2653] Linking build/examples/tcp/ns3-dev-tcp-star-server-debug
+[2542/2653] Linking build/examples/tcp/ns3-dev-star-debug
+[2543/2653] Linking build/examples/tcp/ns3-dev-tcp-bulk-send-debug
+[2544/2653] Linking build/examples/tcp/ns3-dev-tcp-pcap-nanosec-example-debug
+[2545/2653] Linking build/examples/tcp/ns3-dev-tcp-nsc-comparison-debug
+[2546/2653] Linking build/examples/tcp/ns3-dev-tcp-variants-comparison-debug
+[2547/2653] Linking build/examples/tcp/ns3-dev-tcp-pacing-debug
+[2548/2653] Linking build/examples/wireless/ns3-dev-mixed-wired-wireless-debug
+[2549/2653] Linking build/examples/wireless/ns3-dev-wifi-adhoc-debug
+[2550/2653] Linking build/examples/wireless/ns3-dev-wifi-ap-debug
+[2551/2653] Linking build/examples/wireless/ns3-dev-wifi-wired-bridging-debug
+[2552/2653] Linking build/examples/wireless/ns3-dev-multirate-debug
+[2553/2653] Linking build/examples/wireless/ns3-dev-wifi-blockack-debug
+[2554/2653] Linking build/examples/wireless/ns3-dev-wifi-hidden-terminal-debug
+[2555/2653] Linking build/examples/wireless/ns3-dev-ht-wifi-network-debug
+[2556/2653] Linking build/examples/wireless/ns3-dev-vht-wifi-network-debug
+[2557/2653] Linking build/examples/wireless/ns3-dev-wifi-timing-attributes-debug
+[2558/2653] Linking build/examples/wireless/ns3-dev-wifi-sleep-debug
+[2559/2653] Linking build/examples/wireless/ns3-dev-power-adaptation-distance-debug
+[2560/2653] Linking build/examples/wireless/ns3-dev-power-adaptation-interference-debug
+[2561/2653] Linking build/examples/wireless/ns3-dev-rate-adaptation-distance-debug
+[2562/2653] Linking build/examples/wireless/ns3-dev-wifi-aggregation-debug
+[2563/2653] Linking build/examples/wireless/ns3-dev-simple-ht-hidden-stations-debug
+[2564/2653] Linking build/examples/wireless/ns3-dev-80211n-mimo-debug
+[2565/2653] Linking build/examples/wireless/ns3-dev-mixed-network-debug
+[2566/2653] Linking build/examples/wireless/ns3-dev-wifi-tcp-debug
+[2567/2653] Linking build/examples/wireless/ns3-dev-80211e-txop-debug
+[2568/2653] Linking build/examples/wireless/ns3-dev-wifi-spectrum-per-example-debug
+[2569/2653] Linking build/examples/wireless/ns3-dev-wifi-spectrum-per-interference-debug
+[2570/2653] Linking build/examples/wireless/ns3-dev-wifi-spectrum-saturation-example-debug
+[2571/2653] Linking build/examples/wireless/ns3-dev-he-wifi-network-debug
+[2572/2653] Linking build/examples/wireless/ns3-dev-wifi-multi-tos-debug
+[2573/2653] Linking build/examples/wireless/ns3-dev-wifi-backward-compatibility-debug
+[2574/2653] Linking build/examples/wireless/ns3-dev-wifi-pcf-debug
+[2575/2653] Linking build/examples/naming/ns3-dev-object-names-debug
+[2576/2653] Linking build/examples/realtime/ns3-dev-realtime-udp-echo-debug
+[2577/2653] Linking build/examples/socket/ns3-dev-socket-bound-tcp-static-routing-debug
+[2578/2653] Linking build/examples/tutorial/ns3-dev-first-debug
+[2579/2653] Linking build/examples/tutorial/ns3-dev-second-debug
+[2580/2653] Linking build/examples/tutorial/ns3-dev-third-debug
+[2581/2653] Linking build/examples/tutorial/ns3-dev-fifth-debug
+[2582/2653] Linking build/examples/tutorial/ns3-dev-sixth-debug
+[2583/2653] Linking build/examples/tutorial/ns3-dev-seventh-debug
+[2584/2653] Linking build/examples/routing/ns3-dev-dynamic-global-routing-debug
+[2585/2653] Linking build/examples/routing/ns3-dev-static-routing-slash32-debug
+[2586/2653] Linking build/examples/routing/ns3-dev-global-routing-slash32-debug
+[2587/2653] Linking build/examples/routing/ns3-dev-global-injection-slash32-debug
+[2588/2653] Linking build/examples/routing/ns3-dev-simple-global-routing-debug
+[2589/2653] Linking build/examples/routing/ns3-dev-simple-alternate-routing-debug
+[2590/2653] Linking build/examples/routing/ns3-dev-mixed-global-routing-debug
+[2591/2653] Linking build/examples/routing/ns3-dev-manet-routing-compare-debug
+[2592/2653] Linking build/examples/routing/ns3-dev-global-routing-multi-switch-plus-router-debug
+[2593/2653] Linking build/examples/error-model/ns3-dev-simple-error-model-debug
+[2594/2653] Linking build/scratch/my-third
+[2595/2653] Linking build/scratch/subdir/subdir
+[2596/2653] Linking build/scratch/my-vanet2
+[2638/2653] Linking build/scratch/udp-client-server
+[2639/2653] Linking build/scratch/lena-simple
+[2640/2653] Linking build/scratch/third
+[2641/2653] Linking build/scratch/my-vanet3
+[2642/2653] Linking build/scratch/my-vanet1
+[2643/2653] Linking build/scratch/vanet-routing-compare
+[2644/2653] Linking build/scratch/vanet5-p2p
+[2645/2653] Linking build/scratch/my-vanet4
+[2646/2653] Linking build/scratch/mixed-wired-wireless
+[2647/2653] Linking build/scratch/my-vanet5
+[2648/2653] Linking build/scratch/scratch-simulator
+[2649/2653] Linking build/scratch/my-aodv
+[2650/2653] Linking build/scratch/my-olsr
+[2651/2653] Linking build/scratch/vanet3-p2p
+[2652/2653] Linking build/utils/ns3-dev-test-runner-debug
+[2653/2653] Linking build/utils/ns3-dev-print-introspected-doxygen-debug
+Waf: Leaving directory `/home/fk/ns-3.29/bake/source/ns-3.29/build'
+Build commands will be stored in build/compile_commands.json
+'build' finished successfully (26.311s)
+n
+n
+n
+n
+n
+n
+n
+n
+n
+n
+n
+client1 node address 172.1.1.1
+server1 node address 172.1.1.2
+client2 node address 172.2.1.1
+server2 node address 172.2.1.2
+create3 node address 172.3.1.1
+server3 node address 172.3.1.2
+client4 node address 172.4.1.1
+server4 node address 172.4.1.2
+RX NodeId, 19, packet size,1012, bytes from,12.1.1.1, Sequence Number,0, Uid,1583, TXtime, +5000000000.0ns, RXtime, +5010642046.0ns, Delay, +10642046.0ns
+RX NodeId, 29, packet size,1012, bytes from,13.1.1.1, Sequence Number,0, Uid,1584, TXtime, +5000000000.0ns, RXtime, +5023370998.0ns, Delay, +23370998.0ns
+RX NodeId, 10, packet size,1012, bytes from,172.2.1.1, Sequence Number,0, Uid,1585, TXtime, +5000000000.0ns, RXtime, +5025398055.0ns, Delay, +25398055.0ns
+RX NodeId, 20, packet size,1012, bytes from,172.4.1.1, Sequence Number,0, Uid,1588, TXtime, +5000000000.0ns, RXtime, +5025398055.0ns, Delay, +25398055.0ns
+RX NodeId, 30, packet size,1012, bytes from,172.1.1.1, Sequence Number,0, Uid,1577, TXtime, +5000000000.0ns, RXtime, +5028718884.0ns, Delay, +28718884.0ns
+RX NodeId, 31, packet size,1012, bytes from,172.3.1.1, Sequence Number,0, Uid,1580, TXtime, +5000000000.0ns, RXtime, +5028718884.0ns, Delay, +28718884.0ns
+RX NodeId, 29, packet size,1012, bytes from,13.1.1.1, Sequence Number,1, Uid,2026, TXtime, +6000000000.0ns, RXtime, +6004874666.0ns, Delay, +4874666.0ns
+RX NodeId, 19, packet size,1012, bytes from,12.1.1.1, Sequence Number,1, Uid,2023, TXtime, +6000000000.0ns, RXtime, +6005121682.0ns, Delay, +5121682.0ns
+RX NodeId, 10, packet size,1012, bytes from,172.2.1.1, Sequence Number,1, Uid,2029, TXtime, +6000000000.0ns, RXtime, +6025398055.0ns, Delay, +25398055.0ns
+RX NodeId, 20, packet size,1012, bytes from,172.4.1.1, Sequence Number,1, Uid,2032, TXtime, +6000000000.0ns, RXtime, +6025398055.0ns, Delay, +25398055.0ns
+RX NodeId, 30, packet size,1012, bytes from,172.1.1.1, Sequence Number,1, Uid,2017, TXtime, +6000000000.0ns, RXtime, +6028718884.0ns, Delay, +28718884.0ns
+RX NodeId, 31, packet size,1012, bytes from,172.3.1.1, Sequence Number,1, Uid,2020, TXtime, +6000000000.0ns, RXtime, +6028718884.0ns, Delay, +28718884.0ns
+RX NodeId, 19, packet size,1012, bytes from,12.1.1.1, Sequence Number,2, Uid,2421, TXtime, +7000000000.0ns, RXtime, +7004874682.0ns, Delay, +4874682.0ns
+RX NodeId, 29, packet size,1012, bytes from,13.1.1.1, Sequence Number,2, Uid,2424, TXtime, +7000000000.0ns, RXtime, +7004965666.0ns, Delay, +4965666.0ns
+RX NodeId, 10, packet size,1012, bytes from,172.2.1.1, Sequence Number,2, Uid,2427, TXtime, +7000000000.0ns, RXtime, +7025398055.0ns, Delay, +25398055.0ns
+RX NodeId, 20, packet size,1012, bytes from,172.4.1.1, Sequence Number,2, Uid,2430, TXtime, +7000000000.0ns, RXtime, +7025398055.0ns, Delay, +25398055.0ns
+RX NodeId, 30, packet size,1012, bytes from,172.1.1.1, Sequence Number,2, Uid,2415, TXtime, +7000000000.0ns, RXtime, +7028718884.0ns, Delay, +28718884.0ns
+RX NodeId, 31, packet size,1012, bytes from,172.3.1.1, Sequence Number,2, Uid,2418, TXtime, +7000000000.0ns, RXtime, +7028718884.0ns, Delay, +28718884.0ns
+RX NodeId, 29, packet size,1012, bytes from,13.1.1.1, Sequence Number,3, Uid,2818, TXtime, +8000000000.0ns, RXtime, +8005004666.0ns, Delay, +5004666.0ns
+RX NodeId, 19, packet size,1012, bytes from,12.1.1.1, Sequence Number,3, Uid,2815, TXtime, +8000000000.0ns, RXtime, +8005160682.0ns, Delay, +5160682.0ns
+RX NodeId, 10, packet size,1012, bytes from,172.2.1.1, Sequence Number,3, Uid,2821, TXtime, +8000000000.0ns, RXtime, +8025398055.0ns, Delay, +25398055.0ns
+RX NodeId, 20, packet size,1012, bytes from,172.4.1.1, Sequence Number,3, Uid,2824, TXtime, +8000000000.0ns, RXtime, +8025398055.0ns, Delay, +25398055.0ns
+RX NodeId, 30, packet size,1012, bytes from,172.1.1.1, Sequence Number,3, Uid,2809, TXtime, +8000000000.0ns, RXtime, +8028718884.0ns, Delay, +28718884.0ns
+RX NodeId, 31, packet size,1012, bytes from,172.3.1.1, Sequence Number,3, Uid,2812, TXtime, +8000000000.0ns, RXtime, +8028718884.0ns, Delay, +28718884.0ns
+RX NodeId, 29, packet size,1012, bytes from,13.1.1.1, Sequence Number,4, Uid,3216, TXtime, +9000000000.0ns, RXtime, +9004926666.0ns, Delay, +4926666.0ns
+RX NodeId, 19, packet size,1012, bytes from,12.1.1.1, Sequence Number,4, Uid,3213, TXtime, +9000000000.0ns, RXtime, +9004978682.0ns, Delay, +4978682.0ns
+RX NodeId, 10, packet size,1012, bytes from,172.2.1.1, Sequence Number,4, Uid,3219, TXtime, +9000000000.0ns, RXtime, +9025398055.0ns, Delay, +25398055.0ns
+RX NodeId, 20, packet size,1012, bytes from,172.4.1.1, Sequence Number,4, Uid,3222, TXtime, +9000000000.0ns, RXtime, +9025398055.0ns, Delay, +25398055.0ns
+RX NodeId, 9, packet size,1012, bytes from,11.1.1.1, Sequence Number,0, Uid,3225, TXtime, +9000000000.0ns, RXtime, +9028474998.0ns, Delay, +28474998.0ns
+RX NodeId, 30, packet size,1012, bytes from,172.1.1.1, Sequence Number,4, Uid,3207, TXtime, +9000000000.0ns, RXtime, +9028718884.0ns, Delay, +28718884.0ns
+RX NodeId, 31, packet size,1012, bytes from,172.3.1.1, Sequence Number,4, Uid,3210, TXtime, +9000000000.0ns, RXtime, +9028718884.0ns, Delay, +28718884.0ns

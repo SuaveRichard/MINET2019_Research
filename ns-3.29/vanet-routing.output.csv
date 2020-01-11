@@ -1,0 +1,11 @@
+SimulationSecond,ReceiveRate,PacketsReceived,NumberOfSinks,RoutingProtocol,TransmissionPower,WavePktsSent,WavePtksReceived,WavePktsPpr,ExpectedWavePktsReceived,ExpectedWavePktsInCoverageReceived,BSM_PDR1,BSM_PDR2,BSM_PDR3,BSM_PDR4,BSM_PDR5,BSM_PDR6,BSM_PDR7,BSM_PDR8,BSM_PDR9,BSM_PDR10,MacPhyOverhead
+0,0,0,10,protocol,7.5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+1,0,0,10,protocol,7.5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+2,0,0,10,protocol,7.5,400,59,0.1475,0,0,0,0,0,1,1,0.983333,0.983333,0.983333,0.983333,0.983333,0.320177
+3,0,0,10,protocol,7.5,400,60,0.15,0,0,0,0,0,1,1,1,1,1,1,1,0.293679
+4,0,0,10,protocol,7.5,400,60,0.15,0,0,0,0,0,1,1,1,1,1,1,1,0.284498
+5,0,0,10,protocol,7.5,400,60,0.15,0,0,0,0,0,1,1,1,1,1,1,1,0.27984
+6,0,0,10,protocol,7.5,400,60,0.15,0,0,0,0,0,1,1,1,1,1,1,1,0.277023
+7,0,0,10,protocol,7.5,400,60,0.15,0,0,0,0,1,1,1,1,1,1,1,1,0.275136
+8,0,0,10,protocol,7.5,400,61,0.1525,0,0,0,0,1,1,1,1,0.9375,0.9375,0.9375,0.9375,0.273783
+9,0,0,10,protocol,7.5,400,63,0.1575,0,0,0,0,1,1,1,1,0.7875,0.7875,0.7875,0.7875,0.272779
